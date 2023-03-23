@@ -27,5 +27,11 @@ int main () {
   cout << p1.discount << endl;
   cout << p1.finalPrice() << endl;
 
+  Product p2 {"iPad", 2000.50, 0.2 };
+
+  cout << p2.name << endl;
+  cout << p2.price << endl;
+  cout << p2.discount << endl;
+  cout << p2.finalPrice() << endl;
   return 0;
 }
