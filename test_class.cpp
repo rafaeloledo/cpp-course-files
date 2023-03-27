@@ -24,7 +24,11 @@ int main () {
   d1.month = 03;
   d1.year = 2023;
 
-  cout << d1.toString();
+  cout << d1.toString() << endl;
+  
+  Date d2 {31, 12, 2022};
+  
+  cout << d2.toString() << endl;
 
   return 0;
 }
