@@ -7,13 +7,10 @@ class Date {
   public:
     int day, month, year;
 
-  Date(int day, int month, int year) {
-    this->day = day;
-    this->month = month;
-    this->year = year;
-  }
+  Date(int day = 1, int month = 1, int year = 1970)
+    : day(day), month(month), year(year) {}
 
-  string toString () {
+  string toString() {
     stringstream s;
 
     s << day << "/" << month << "/" << year;
@@ -25,7 +22,10 @@ class Date {
 int main () {
   Date d1 = Date(1, 1, 1970);
 
+  Date d2;
+
   cout << d1.toString() << endl;
+  cout << d2.toString() << endl;
 
   return 0;
 }
