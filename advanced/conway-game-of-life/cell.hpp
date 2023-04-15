@@ -6,23 +6,14 @@
 #include "life.hpp"
 
 class cell {
-    bool alive;
+  bool alive;
+
 public:
-    cell() : alive(false) {}
-
-    void draw(int row, int col) const;
-
-    void create() {
-        alive = true;
-    }
-
-    void erase() {
-        alive = false;
-    }
-
-    bool is_alive() const {
-        return alive;
-    }
+  cell() : alive(false) {}
+  void draw(int row, int col) const;
+  void create() { alive = true; }
+  void erase() { alive = false; }
+  bool is_alive() const { return alive; }
 };
 
-#endif  // CELL_H_ 
+#endif // CELL_H_
